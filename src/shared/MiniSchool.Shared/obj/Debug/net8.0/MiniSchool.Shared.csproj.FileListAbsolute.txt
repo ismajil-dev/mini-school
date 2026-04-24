@@ -1,0 +1,13 @@
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\bin\Debug\net8.0\MiniSchool.Shared.deps.json
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\bin\Debug\net8.0\MiniSchool.Shared.dll
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\bin\Debug\net8.0\MiniSchool.Shared.pdb
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\obj\Debug\net8.0\MiniSchool.Shared.csproj.AssemblyReference.cache
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\obj\Debug\net8.0\MiniSchool.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\obj\Debug\net8.0\MiniSchool.Shared.AssemblyInfoInputs.cache
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\obj\Debug\net8.0\MiniSchool.Shared.AssemblyInfo.cs
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\obj\Debug\net8.0\MiniSchool.Shared.csproj.CoreCompileInputs.cache
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\obj\Debug\net8.0\MiniSchool.Shared.sourcelink.json
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\obj\Debug\net8.0\MiniSchool.Shared.dll
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\obj\Debug\net8.0\refint\MiniSchool.Shared.dll
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\obj\Debug\net8.0\MiniSchool.Shared.pdb
+C:\Users\kerim\source\repos\MiniSchool\src\shared\MiniSchool.Shared\obj\Debug\net8.0\ref\MiniSchool.Shared.dll

@@ -1,0 +1,16 @@
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\bin\Debug\net8.0\MiniSchool.Domain.deps.json
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\bin\Debug\net8.0\MiniSchool.Domain.dll
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\bin\Debug\net8.0\MiniSchool.Domain.pdb
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\bin\Debug\net8.0\MiniSchool.Shared.dll
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\bin\Debug\net8.0\MiniSchool.Shared.pdb
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\MiniSchool.Domain.csproj.AssemblyReference.cache
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\MiniSchool.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\MiniSchool.Domain.AssemblyInfoInputs.cache
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\MiniSchool.Domain.AssemblyInfo.cs
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\MiniSchool.Domain.csproj.CoreCompileInputs.cache
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\MiniSchool.Domain.sourcelink.json
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\MiniScho.A5357C4C.Up2Date
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\MiniSchool.Domain.dll
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\refint\MiniSchool.Domain.dll
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\MiniSchool.Domain.pdb
+C:\Users\kerim\source\repos\MiniSchool\src\core\MiniSchool.Domain\obj\Debug\net8.0\ref\MiniSchool.Domain.dll
