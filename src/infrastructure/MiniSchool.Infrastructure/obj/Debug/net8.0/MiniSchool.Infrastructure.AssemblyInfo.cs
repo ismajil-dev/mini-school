@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniSchool.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5bd8db9ce63f9e5ee801e89fba53ce9fc0f0ab06")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e158784a260ad94c9a4be303ac6d85dfd5f3e9a3")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniSchool.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniSchool.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

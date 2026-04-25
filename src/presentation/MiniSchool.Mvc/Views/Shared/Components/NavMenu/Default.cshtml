@@ -1,0 +1,52 @@
+﻿<div class="accordion accordion-flush" id="accordionNav">
+    <div class="accordion-item bg-dark border-secondary">
+        <h2 class="accordion-header">
+            <button class="accordion-button bg-dark text-white collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLesson">
+                <i class="bi bi-book me-2"></i> Dərs İdarəetməsi
+            </button>
+        </h2>
+        <div id="collapseLesson" class="accordion-collapse collapse" data-bs-parent="#accordionNav">
+            <div class="accordion-body p-0">
+                <div class="list-group list-group-flush">
+                    <a asp-controller="Lesson" asp-action="Index" class="list-group-item list-group-item-action bg-dark text-light border-0 ps-5">Siyahı</a>
+                    <a asp-controller="Lesson" asp-action="Register" class="list-group-item list-group-item-action bg-dark text-light border-0 ps-5">Əlavə et</a>
+                    <a asp-controller="Lesson" asp-action="Index" class="list-group-item list-group-item-action bg-dark text-light border-0 ps-5">Dəyiş (Siyahıdan seç)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item bg-dark border-secondary">
+        <h2 class="accordion-header">
+            <button class="accordion-button bg-dark text-white collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseStudent">
+                <i class="bi bi-person me-2"></i> Şagird İdarəetməsi
+            </button>
+        </h2>
+        <div id="collapseStudent" class="accordion-collapse collapse" data-bs-parent="#accordionNav">
+            <div class="accordion-body p-0">
+                <div class="list-group list-group-flush">
+                    <a asp-controller="Student" asp-action="Index" class="list-group-item list-group-item-action bg-dark text-light border-0 ps-5">Siyahı</a>
+                    <a asp-controller="Student" asp-action="Register" class="list-group-item list-group-item-action bg-dark text-light border-0 ps-5">Əlavə et</a>
+                    <a asp-controller="Student" asp-action="Index" class="list-group-item list-group-item-action bg-dark text-light border-0 ps-5">Dəyiş (Siyahıdan seç)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="accordion-item bg-dark border-secondary">
+        <h2 class="accordion-header">
+            <button class="accordion-button bg-dark text-white collapsed shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExam">
+                <i class="bi bi-pencil-square me-2"></i> İmtahan İdarəetməsi
+            </button>
+        </h2>
+        <div id="collapseExam" class="accordion-collapse collapse" data-bs-parent="#accordionNav">
+            <div class="accordion-body p-0">
+                <div class="list-group list-group-flush">
+                    <a asp-controller="Exam" asp-action="Index" class="list-group-item list-group-item-action bg-dark text-light border-0 ps-5">Siyahı</a>
+                    <a asp-controller="Exam" asp-action="Register" class="list-group-item list-group-item-action bg-dark text-light border-0 ps-5">Əlavə et</a>
+                    <a asp-controller="Exam" asp-action="Index" class="list-group-item list-group-item-action bg-dark text-light border-0 ps-5">Dəyiş (Siyahıdan seç)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
