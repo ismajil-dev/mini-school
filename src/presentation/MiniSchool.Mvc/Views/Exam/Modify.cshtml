@@ -1,0 +1,54 @@
+﻿@model SchoolExample.Application.Dtos.Requests.Exams.ExamModifyRequest
+@{
+    ViewData["Title"] = "İmtahanı Dəyiş";
+}
+
+<div class="card shadow-sm w-50 mx-auto mt-4">
+    <div class="card-header bg-warning text-dark">
+        <h5 class="mb-0">İmtahanı Dəyiş (ID: @Model.Id)</h5>
+    </div>
+    <div class="card-body">
+        <form asp-action="Modify" method="post">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="mb-3">
+                <label asp-for="LessonId" class="form-label fw-bold">Dərs Seçin</label>
+                <select asp-for="LessonId" asp-items="ViewBag.Lessons" class="form-select">
+                    <option value="">-- Dərs Seçin --</option>
+                </select>
+                <span asp-validation-for="LessonId" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="StudentId" class="form-label fw-bold">Şagird Seçin</label>
+                <select asp-for="StudentId" asp-items="ViewBag.Students" class="form-select">
+                    <option value="">-- Şagird Seçin --</option>
+                </select>
+                <span asp-validation-for="StudentId" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="ExamDate" class="form-label fw-bold">İmtahan Tarixi</label>
+                <input asp-for="ExamDate" type="date" value="@Model.ExamDate.ToString("yyyy-MM-dd")" class="form-control" />
+                <span asp-validation-for="ExamDate" class="text-danger small"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="Grade" class="form-label fw-bold">Qiymət (0-10)</label>
+                <input asp-for="Grade" type="number" class="form-control" />
+                <span asp-validation-for="Grade" class="text-danger small"></span>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2 mt-4">
+                <a asp-action="Index" class="btn btn-light border">Ləğv Et</a>
+                <button type="submit" class="btn btn-warning">Yenilə</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

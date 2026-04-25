@@ -1,0 +1,82 @@
+﻿@model IEnumerable<SchoolExample.Domain.Entities.Student>
+@{ ViewData["Title"] = "Şagirdlərin Siyahısı"; }
+
+<div class="card shadow-sm">
+    <div class="card-header bg-white d-flex justify-content-between align-items-center">
+        <h4 class="mb-0">Şagirdlər</h4>
+        <div>
+            <button id="btnBulkArchive" class="btn btn-danger btn-sm">Seçilənləri Arxivlə</button>
+            <a asp-action="Register" class="btn btn-primary btn-sm">Yeni Əlavə Et</a>
+        </div>
+    </div>
+    <div class="card-body">
+        <table class="table table-hover align-middle">
+            <thead class="table-light">
+                <tr>
+                    <th><input type="checkbox" id="checkAll" class="form-check-input" /></th>
+                    <th>ID</th>
+                    <th>Ad</th>
+                    <th>Soyad</th>
+                    <th>Sinif</th>
+                    <th>Əməliyyat</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input row-checkbox" value="@item.Id" /></td>
+                        <td><span class="badge bg-info">@item.Id</span></td>
+                        <td>@item.Name</td>
+                        <td>@item.Surname</td>
+                        <td>@item.ClassLevel</td>
+                        <td>
+                            <a asp-action="Modify" asp-route-id="@item.Id" class="btn btn-warning btn-sm">
+                                <i class="bi bi-pencil"></i> Dəyiş
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $('#checkAll').change(function () {
+                $('.row-checkbox').prop('checked', $(this).prop('checked'));
+            });
+
+            $('#btnBulkArchive').click(function () {
+                var selected = $('.row-checkbox:checked').map(function () {
+                    return parseInt($(this).val());
+                }).get();
+
+                if (selected.length === 0) {
+                    alert("Zəhmət olmasa arxivləmək üçün ən azı bir sətir seçin.");
+                    return;
+                }
+
+                if (confirm("Seçilən qeydləri arxivləmək istədiyinizə əminsiniz?")) {
+                    $.ajax({
+                        url: '@Url.Action("Archive", "Student")',
+                        type: 'POST',
+                        contentType: 'application/json',
+                        data: JSON.stringify({ Ids: selected }),
+                        success: function (response) {
+                            if(response.success) {
+                                alert(response.message);
+                                location.reload();
+                            }
+                        },
+                        error: function () {
+                            alert("Xəta baş verdi.");
+                        }
+                    });
+                }
+            });
+        });
+    </script>
+}

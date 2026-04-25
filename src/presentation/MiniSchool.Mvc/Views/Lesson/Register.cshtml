@@ -1,0 +1,52 @@
+﻿@model SchoolExample.Application.Dtos.Requests.Lessons.LessonRegisterRequest
+@{
+    ViewData["Title"] = "Dərs Əlavə Et";
+}
+
+<div class="card shadow-sm w-50 mx-auto mt-4">
+    <div class="card-header bg-primary text-white">
+        <h5 class="mb-0">Yeni Dərs Qeydiyyatı</h5>
+    </div>
+    <div class="card-body">
+        <form asp-action="Register" method="post">
+            <div class="mb-3">
+                <label asp-for="Code" class="form-label fw-bold">Dərsin Kodu</label>
+                <input asp-for="Code" class="form-control" placeholder="Məs: MAT" />
+                <span asp-validation-for="Code" class="text-danger small"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label fw-bold">Dərsin Adı</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger small"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ClassLevel" class="form-label fw-bold">Sinif Səviyyəsi</label>
+                <input asp-for="ClassLevel" type="number" class="form-control" />
+                <span asp-validation-for="ClassLevel" class="text-danger small"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="TeacherName" class="form-label fw-bold">Müəllim Adı</label>
+                    <input asp-for="TeacherName" class="form-control" />
+                    <span asp-validation-for="TeacherName" class="text-danger small"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="TeacherSurname" class="form-label fw-bold">Müəllim Soyadı</label>
+                    <input asp-for="TeacherSurname" class="form-control" />
+                    <span asp-validation-for="TeacherSurname" class="text-danger small"></span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2 mt-4">
+                <a asp-action="Index" class="btn btn-light border">Ləğv Et</a>
+                <button type="submit" class="btn btn-success">Yadda Saxla</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,40 @@
+﻿@model SchoolExample.Application.Dtos.Requests.Students.StudentRegisterRequest
+@{
+    ViewData["Title"] = "Şagird Əlavə Et";
+}
+
+<div class="card shadow-sm w-50 mx-auto mt-4">
+    <div class="card-header bg-primary text-white">
+        <h5 class="mb-0">Yeni Şagird Qeydiyyatı</h5>
+    </div>
+    <div class="card-body">
+        <form asp-action="Register" method="post">
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label fw-bold">Şagirdin Adı</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger small"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Surname" class="form-label fw-bold">Şagirdin Soyadı</label>
+                <input asp-for="Surname" class="form-control" />
+                <span asp-validation-for="Surname" class="text-danger small"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ClassLevel" class="form-label fw-bold">Sinif Səviyyəsi</label>
+                <input asp-for="ClassLevel" type="number" class="form-control" />
+                <span asp-validation-for="ClassLevel" class="text-danger small"></span>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2 mt-4">
+                <a asp-action="Index" class="btn btn-light border">Ləğv Et</a>
+                <button type="submit" class="btn btn-success">Yadda Saxla</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,54 @@
+﻿@model SchoolExample.Application.Dtos.Requests.Lessons.LessonModifyRequest
+@{
+    ViewData["Title"] = "Dərsi Dəyiş";
+}
+
+<div class="card shadow-sm w-50 mx-auto mt-4">
+    <div class="card-header bg-warning text-dark">
+        <h5 class="mb-0">Dərsi Dəyiş (ID: @Model.Id)</h5>
+    </div>
+    <div class="card-body">
+        <form asp-action="Modify" method="post">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="mb-3">
+                <label asp-for="Code" class="form-label fw-bold">Dərsin Kodu</label>
+                <input asp-for="Code" class="form-control" />
+                <span asp-validation-for="Code" class="text-danger small"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label fw-bold">Dərsin Adı</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger small"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ClassLevel" class="form-label fw-bold">Sinif Səviyyəsi</label>
+                <input asp-for="ClassLevel" type="number" class="form-control" />
+                <span asp-validation-for="ClassLevel" class="text-danger small"></span>
+            </div>
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label asp-for="TeacherName" class="form-label fw-bold">Müəllim Adı</label>
+                    <input asp-for="TeacherName" class="form-control" />
+                    <span asp-validation-for="TeacherName" class="text-danger small"></span>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label asp-for="TeacherSurname" class="form-label fw-bold">Müəllim Soyadı</label>
+                    <input asp-for="TeacherSurname" class="form-control" />
+                    <span asp-validation-for="TeacherSurname" class="text-danger small"></span>
+                </div>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2 mt-4">
+                <a asp-action="Index" class="btn btn-light border">Ləğv Et</a>
+                <button type="submit" class="btn btn-warning">Yenilə</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

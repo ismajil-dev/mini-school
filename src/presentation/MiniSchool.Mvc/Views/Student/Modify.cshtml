@@ -1,0 +1,42 @@
+﻿@model SchoolExample.Application.Dtos.Requests.Students.StudentModifyRequest
+@{
+    ViewData["Title"] = "Şagirdi Dəyiş";
+}
+
+<div class="card shadow-sm w-50 mx-auto mt-4">
+    <div class="card-header bg-warning text-dark">
+        <h5 class="mb-0">Şagirdi Dəyiş (ID: @Model.Id)</h5>
+    </div>
+    <div class="card-body">
+        <form asp-action="Modify" method="post">
+            <input type="hidden" asp-for="Id" />
+
+            <div class="mb-3">
+                <label asp-for="Name" class="form-label fw-bold">Şagirdin Adı</label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger small"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Surname" class="form-label fw-bold">Şagirdin Soyadı</label>
+                <input asp-for="Surname" class="form-control" />
+                <span asp-validation-for="Surname" class="text-danger small"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="ClassLevel" class="form-label fw-bold">Sinif Səviyyəsi</label>
+                <input asp-for="ClassLevel" type="number" class="form-control" />
+                <span asp-validation-for="ClassLevel" class="text-danger small"></span>
+            </div>
+
+            <div class="d-flex justify-content-end gap-2 mt-4">
+                <a asp-action="Index" class="btn btn-light border">Ləğv Et</a>
+                <button type="submit" class="btn btn-warning">Yenilə</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
