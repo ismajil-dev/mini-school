@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MiniSchool.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+292704a53e3137e4f0cce613b7a0dc36116721ce")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ae3d0dbf19a37e625c04d86e71c4f5193bbabb0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("MiniSchool.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MiniSchool.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
